@@ -4,12 +4,41 @@
       {
         "type": "Control",
         "label": "Completed",
-        "scope": "#/properties/done"
+        "scope": "#/properties/done",
+        "rule": {
+          "effect": "HIDE",
+          "condition": {
+            "scope": "#",
+            "schema": {
+              "anyOf": [
+                {
+                  "properties": {
+                    "name": { "const": "value1" }
+                  }
+                },
+                {
+                  "properties": {
+                    "rating": { "const": "" }
+                  }
+                }
+              ]
+            }
+          }
+        }
+        
       },
       {
-        "type": "Control",
-        "scope": "#/properties/name"
+        "type": "Group",
+        "label": "My Accordion Group",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/name"
+          }
+        ]
       },
+      
+      
       {
         "type": "HorizontalLayout",
         "elements": [

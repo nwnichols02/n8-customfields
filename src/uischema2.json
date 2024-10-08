@@ -1,0 +1,81 @@
+{
+    "type": "Group",
+    "elements": [
+      {
+        "type": "VerticalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/description",
+            "label": "Description"
+          },
+          {
+            "type": "HorizontalLayout",
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/type",
+                "label": "Type"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/priority",
+                "label": "Priority"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/status",
+                "label": "Status"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/due_date",
+                "label": "Due Date"
+              }
+            ]
+          },
+          {
+            "type": "HorizontalLayout",
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/name",
+                "label": "Assigned To",
+                "ui:options": {
+                "style": {
+                  "padding": "10px"
+                }
+              }
+              }
+            ]
+          },
+          {
+            "type": "HorizontalLayout",
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/clientName",
+                "label": "Client Name"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/clientEmail",
+                "label": "Client Email"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/clientPhone",
+                "label": "Client Phone"
+              }
+            ],"options": {
+            "spacing": 8
+          }
+          }
+        ],
+        "options": {
+            "spacing": 8
+          }
+      }
+    ],
+    "label": "Base Information"
+  }

@@ -9,6 +9,27 @@
         "title": "Long Description",
         "type": "string"
       },
+      "priority": {
+        "type": "string",
+        "enum": ["Low", "Medium", "High"]
+      },
+      "status": {
+        "type": "string",
+        "enum": ["Not Started", "In Progress", "Completed"]
+      },
+      "type": {
+        "type": "string",
+        "enum": ["Bug", "Feature", "Enhancement"]
+      },
+      "clientName": {
+        "type": "string"
+      },
+      "clientEmail": {
+        "type": "string"
+      },
+      "clientPhone": {
+        "type": "string"
+      },
       "done": {
         "type": "boolean"
       },
